@@ -1,0 +1,23 @@
+Typ JDY-23
+Arbeitsfrequenz 2,4G
+Frequenzstärke 4db max
+Kommunikation Interface UART
+
+Betriebs Spannung Bluetoothboard 1,8 - 3,6V
+
+Gesamte Modul 3,6 - 6V
+
+Betriebstemperatur -40°c - 80°c
+
+Integrierte PCB Antenne
+Empfindlichkeit -97dbm
+Übertragungsabstand 60 Meter
+
+Abmessungen 19,6*14,94*1,8mm (Länge, breite und höhe)
+Bluetooth version BLE 5,0 (Kompatibel mit BLE4.0, BLE4.2)
+
+Arbeitszustand 800uA (Broadcast)
+Light Sleep <50uA (Broadcast)
+Deep Sleep 9uA (Kein broadcast)
+
+
