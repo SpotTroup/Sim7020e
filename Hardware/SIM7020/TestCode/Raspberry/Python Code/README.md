@@ -1,8 +1,11 @@
-The raspberry pi zero W has a WiFi module that allows setting up the device headless. To do this, please follow this wiki: http://wiki.lofarolabs.com/index.php/Install_Raspbian
-Once the device is setup headless or with monitor, keyboard and mouse, please start off with making sure that everything is updated.
+##Rassberyy Pi Setup
+
 sudo apt-get update
+
 sudo apt-get install upgrade -Y
+
 Once everything is updated and the device is ready, please start validating that UART is enabled.
+
 •	sudo raspi-config
 •	option 5 - interfacing options
 •	option P6 - serial
