@@ -12,3 +12,9 @@ Add the following line:
 Save it by pressing Ctrl+X, " Y", ENTER
 
 Re-boot your RPi and it will run.
+
+In another way you can do it just running this command
+
+@reboot python /home/pi/myscript.py
+
+when you will start-up/reboot your rasp-pi then the myscript.py will run
