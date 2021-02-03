@@ -7,9 +7,9 @@
 |____/|_|_| |_| |_/_/  \___/_____|\___/ \___|
                                                        '''
 ##########################################################################################################################################
-##  Name:autoUpdate.py
-##  Comments: Test file to use python with terminal power
-##  Author: Tjark Ziehm
+##  Name:pythoncode.py
+##  Comments: Test code of rasberry pi with sim7020 in python
+##  Author: Alam Al Saud
 ##  Version: 0.1
 ##  Data: February 2020
 ##  Basic: python3
