@@ -1,4 +1,4 @@
-##Rassberyy Pi Setup
+# Rassberyy Pi Setup
 
 sudo apt-get update
 
@@ -6,11 +6,11 @@ sudo apt-get install upgrade -Y
 
 Once everything is updated and the device is ready, please start validating that UART is enabled.
 
-•	sudo raspi-config
-•	option 5 - interfacing options
-•	option P6 - serial
-•	Would you like a login shell to be accessible over serial? -> No
-•	Would you like the serial port hardware to be enabled? -> Yes
+*	sudo raspi-config
+*	option 5 - interfacing options
+*	option P6 - serial
+*	Would you like a login shell to be accessible over serial? -> No
+*	Would you like the serial port hardware to be enabled? -> Yes
  
 With UART configured please check whether or not you see the device we will be interfacing with /dev/ttyS0 with command: ls -l /dev | grep tty.
 This project utilizes the UART protocol for communicating with the SIM7000 module. In this case there is a python-serial library that will simplify the communication with the module. However, initially there is a possibility that the device might not respond to commands, this is mostly due to a power issue. This is why standard USB port on laptops/desktops might not be enough to power the device. The recommendation is to first give it 10-15 minutes and see if it responds, if not would recommend trying a different power source. The best result was achieved by using a power brick, but YMMV. During this testing phase it is not practical to run the actual python code as there are already tools for sending UART commands.
