@@ -1,4 +1,4 @@
-# Rassberyy Pi Setup
+# Raspberry Pi Setup
 
 sudo apt-get update
 
