@@ -1,0 +1,35 @@
+##########################################################################################################################################
+'''
+ ____  _          _____ ___ ____   ___       
+/ ___|(_)_ __ ___|___  / _ \___ \ / _ \  ___ 
+\___ \| | '_ ` _ \  / / | | |__) | | | |/ _ \
+ ___) | | | | | | |/ /| |_| / __/| |_| |  __/
+|____/|_|_| |_| |_/_/  \___/_____|\___/ \___|
+                                                       '''
+##########################################################################################################################################
+##  Name:change the language
+##  Comments: in some project groups like our it is needed to use everything in english and having different OS language Settings
+##  Author: Tjark Ziehm
+##  Version: 0.1
+##  Data: February 2020
+##  Basic: python3
+##  needs: Todo Tree, ...
+#######################Features###########################################################################################################
+## TODO:
+## FIXME:
+#######################Index##############################################################################################################
+##  1. GUI-Way
+##  2. console Way
+##  3. Raspi-config Way
+##########################################################################################################################################
+
+
+##  1. GUI-Way
+
+-> prefereneces -> Raspberry Pi Configuration -> Locations -> Locale: Set Locale 
+then change the keyboard to Generic 105 English US English US
+##  2. console Way
+## TODO: finsih the changeLanguageToXX.sh file
+--> look to our bashfile to switch the language
+##  3. Raspi-config Way
+-> https://geek-university.com/raspberry-pi/internationalisation-options/

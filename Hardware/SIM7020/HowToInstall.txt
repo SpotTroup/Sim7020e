@@ -23,6 +23,8 @@
 # 3. Update Raspian & activate the Hardware Serial 
 # 4. Download Testfiles
 # 5. Configure System 
+# 6. Install Minicom:
+## 7. DemoCode:
 ##########################################################################################################################################
 
 ## 1. Update Firmware:
@@ -59,7 +61,6 @@ With UART configured please check whether or not you see the device we will be i
 ## 4. Download Testfiles
 $ cd Downloads
 $ sudo git clone https://github.com/SpotTroup/Sim7020e
-## FIXME: change foldername from c++ Code without  space
 $ cp Downloads/Sim7020e/Hardware/SIM7020/TestCode/Raspberry/SIM7020X to /home/pi/
 $ cd ./home/pi//SIM7020X/
 $ chmod 777 sim7020_nbiot_hat_init
@@ -72,32 +73,38 @@ $ sudo nano /etc/rc.local
 # Add to last line before
 $ sh /home/pi/SIM7020X/sim7020_nbiot_hat_init  exit and change # change  $ exit 0 ->  $ exit 1
 
+## 6. Install Minicom:
+$ sudo apt-get install minicom
+# Execute:(to enter the minicom (ttyS0: Pi 3B/3B+, ttyAMA0: Zero/2B))
+$ minicom -D /dev/ttyS0 
 
-
-Install Minicom:
-sudo apt-get install minicom
-Execute minicom -D /dev/ttyS0 to enter the minicom (ttyS0: Pi 3B/3B+, ttyAMA0: Zero/2B)
-
+# Todo next
 Press CTRL+a then z -> e to activate echo for console
-Maybe you have to start the SIMCOM Device by ressing the button.
-Check$ AT you need to get the response OK
+Maybe you have to start the SIMCOM Device by pressing the button.
+# Check:
+$ AT 
+you should to get the response OK
 
-Using demo code:
-cd /SIM7020X/bcm2835
-Go to
-cd ./home/pi//SIM7020X/bcm2835
-sudo chmod 755 ./configure
-./configure & make & sudo make check & sudo make install
-This can take till to 15 minutes
-if it fails use
-autoreconf -vfi && ./configure MKDIR_P="mkdir -p"
-and repeat
+## 7. DemoCode:
+
+# Go to
+$ cd ./home/pi/SIM7020X/bcm2835
+$ sudo chmod 755 ./configure
+$ ./configure & make & sudo make check & sudo make install
+# This should not take longer then 5 min.if it fails use:
+$ sudo autoreconf -vfi && ./configure MKDIR_P="mkdir -p"
+# and repeat
 
 if it fails again:
 After looking into the configure.ac script some more, it appears that a line specifying the location of the aux directory, AC_CONFIG_AUX_DIR, is the cause. Removing this seems to provide sane results for a suitable MKDIR_P value.
+Repeat:
+$ sudo autoreconf -vfi && ./configure MKDIR_P="mkdir -p"
 
 Now lets test:
 cd /home/pi/SIM7020X/examples/AT
+
+Compile:
+$ sudo make clean && sudo make && sudo ./main
 
 The following commant brings you to the Terminal for the SIMCOM for AT commands
 sudo make clean && sudo make && sudo ./main
