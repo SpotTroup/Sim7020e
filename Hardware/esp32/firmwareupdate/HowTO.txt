@@ -1,0 +1,19 @@
+How to Update the firmware of tthe esp32 with Arduino Software:
+
+Youtube Video with big THX to DNS TECHPRO:
+https://www.youtube.com/watch?v=bs26559kkJ8
+
+https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32_dev_index.json
+https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32_index.json
+
+
+sudo apt-get install -y gperf python-pip python-dev flex bison build-essential libssl-dev libffi-dev libncurses5-dev libncursesw5-dev libreadline-dev
+
+
+
+sudo esptool --chip esp32 --port /dev/ttyUSB0 erase_flash
+
+
+
+OTA:
+https://www.youtube.com/watch?v=4m5urfN6ucg
