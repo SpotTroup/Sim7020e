@@ -1,0 +1,42 @@
+(1) Experiment Information: we use Raspberry Pi development board and Microwave Motion Sensor to detect human activities in certain ranges. The input function from Raspberry Pi’s GPIO is necessary for this experiment (please see http://wiringpi.com/download-and-install/ for instruction).
+
+(2) Experiment Supply List:
+
+① Raspberry Pi Development Board --1
+
+② Microwave Motion Sensor Model -- 1
+
+③ 3PIN Digital Signal Line -- 1
+
+(3) Wiring Diagram
+
+Attention: please make the wire facing toward the area that needed to be detected. Notice: The sensor is adjustable from range 2m-16m, the detecting ranging decrease as turning the potentiometer clockwise, the detecting range extend as potentiometer turning counterclockwise.
+
+(4) Experiment Code:
+
+
+
+#include <wiringPi.h>
+#include <stdio.h>
+int main()
+{
+  wiringPiSetup();
+  char val;
+  {
+    pinMode(28,INPUT);//microwave motion sensor connecting to PIN28 on raspberry pi
+  }
+  
+  while(1)//if someone passes by
+  { 
+   val=digitalRead(28);
+   if(val==0)
+  {
+   printf("Somebody is in this area!\n");
+   delay(10);//delay10MS
+
+  }
+ Else//nobody passes by
+  {
+   printf("No one!\n");
+   delay(10); //delay 10MS
+ }}}
