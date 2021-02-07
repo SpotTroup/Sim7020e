@@ -1,3 +1,40 @@
 The golden question: Bluetooth at the esp to traffic data
+Comparison and Explain Bluetooth -> https://randomnerdtutorials.com/esp32-bluetooth-low-energy-ble-arduino-ide/
+M%STack -> https://lemariva.com/blog/2020/02/tutorial-micropython-and-bluetooth-ble-m5stack
+https://discourse.dleunig.de/t/esp32-mit-bluetooth-ble-unter-micropython/143
 
 https://github.com/micropython/micropython/pull/4589
+https://github.com/sponsors/jimmo/
+
+ARDUINO - > https://randomnerdtutorials.com/installing-the-esp32-board-in-arduino-ide-mac-and-linux-instructions/
+
+bluetooth:
+https://docs.micropython.org/en/latest/library/ubluetooth.html
+
+pybluez:
+https://github.com/karulis/pybluez
+-> https://techtutorialsx.com/2017/07/17/esp32-bluetooth-advertising-a-spp-service-with-sdp/
+
+Hello_World BTstack:
+https://techtutorialsx.com/2017/07/08/esp32-bluetooth-using-the-btstack-library/
+then:
+https://techtutorialsx.com/2017/07/09/esp32-bluetooth-rfcomm/
+BTStack: https://techtutorialsx.com/2017/07/08/esp32-bluetooth-using-the-btstack-library/
+
+ESPNow-Protocol: https://randomnerdtutorials.com/esp-now-two-way-communication-esp32/
+
+http://docs.micropython.org/en/latest/esp32/quickref.html
+
+
+PYBD
+pip install pyserial 'pyparsing<2.4' works for me
+
+
+virtual env ?
+
+cd ports/esp32
+python3 -m venv venv
+source venv/bin/activate
+pip install --upgrade pip
+pip install pip install -r /path/to/espressif/esp-idf/requirements.txt
+make BOARD=GENERIC -j 16 deploy
