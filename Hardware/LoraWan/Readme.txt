@@ -34,3 +34,6 @@ Open VSCode Extension Manager
 Search for official PlatformIO IDE extension
 Install PlatformIO IDE TLTR -> https://docs.platformio.org/en/latest/
 install Platform : ESP32 https://community.platformio.org/t/esp32-dev-difference-between-framework-espidf-framework-arduino-and-framework-arduino-espidf/10560
+
+youtube
+A LoRaWAN Node using Micropython | FiPy #1
