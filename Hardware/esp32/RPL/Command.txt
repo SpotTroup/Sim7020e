@@ -1,0 +1,18 @@
+https://github.com/micropython/micropython-lib
+https://github.com/pfalcon/pycopy
+
+
+-> sudo apt-get install micropython
+-> micropython -m upip --help
+
+ESP32 specific libraries:
+https://docs.micropython.org/en/latest/library/esp.html
+https://docs.micropython.org/en/latest/library/esp32.html
+
+
+$ help()
+
+->$ help('modules')
+
+
+machine
