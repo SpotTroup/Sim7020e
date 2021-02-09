@@ -14,5 +14,9 @@ $ help()
 
 ->$ help('modules')
 
+$ dir()
+
+manipulate files:
+$import uos; uos.remove('main.py')
 
 machine
