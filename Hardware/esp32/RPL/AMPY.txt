@@ -1,0 +1,12 @@
+https://learn.adafruit.com/micropython-basics-load-files-and-run-code/install-ampy
+https://learn.adafruit.com/micropython-basics-how-to-load-micropython-on-a-board
+
+$ pip install adafruit-ampy
+$ ampy --help
+
+upgrade:
+$ pip3 install adafruit-ampy --upgrade
+
+$ ampy put ble_advertising.py
+$ ampy put ble_temperature.py
+$ ampy put main.py
