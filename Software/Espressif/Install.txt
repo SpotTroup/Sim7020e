@@ -1,0 +1,41 @@
+sudo apt-get install git wget flex bison gperf python3 python3-pip python3-setuptools cmake ninja-build ccache libffi-dev libssl-dev dfu-util libusb-1.0-0
+
+Fixing broken pip on Ubuntu 16.04:
+apt remove python3-pip python3-virtualenv; rm -r ~/.local
+rm -r ~/.espressif/python_env && python get-pip.py
+
+Setting up Python 3 as default for Ubuntu and Debian
+sudo apt-get install python3 python3-pip python3-setuptools
+sudo update-alternatives --install /usr/bin/python python /usr/bin/python3 10 && alias pip=pip3
+
+Check port on Linux
+
+ls /dev/tty*
+
+Adding user to dialout on Linux:
+sudo usermod -a -G dialout $USER
+
+Verify serial connection with Putty:
+Run terminal, set identified serial port, baud rate = 115200, data bits = 8, stop bits = 1, and parity = N. p
+
+download esp-idf
+
+git clone https://github.com/espressif/esp-idf.git
+
+idf.py monitor 
+idf.py -p /dev/ttyUSB0 monitor
+
+more TLTR https://docs.espressif.com/projects/esp-idf/en/latest/esp32/api-guides/tools/idf-monitor.html
+
+Python Serial:
+$ pip install --user pyserial
+
+Toolchain:
+install:
+$sudo apt-get install git wget libncurses-dev flex bison gperf python3 python3-pip python3-setuptools python3-serial python3-cryptography python3-future python3-pyparsing python3-pyelftools cmake ninja-build ccache libffi-dev libssl-dev dfu-util libusb-1.0-0
+
+compile:
+sudo apt-get install git wget libncurses-dev flex bison gperf python3 python3-pip python3-setuptools python3-serial python3-cryptography python3-future python3-pyparsing python3-pyelftools cmake ninja-build ccache libffi-dev libssl-dev dfu-util libusb-1.0-0
+
+toolchain compile from source:
+sudo apt-get install gawk gperf grep gettext python3 python3-dev automake bison flex texinfo help2man libtool libtool-bin make
