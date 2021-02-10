@@ -1,0 +1,5 @@
+usable boards:
+
+Heltec lora v2
+ttgo lilygo T8
+nodeMCU ESP-
