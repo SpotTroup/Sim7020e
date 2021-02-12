@@ -1,0 +1,50 @@
+https://www.youtube.com/watch?v=0dnnqToK28A
+There are several important LoRa end node libraries.
+- Semtech LoRaMac-node library
+- IBM LMIC library    (Note: LMIC stands for LoraMAC-in-C)
+- Arduino LMIC library
+Besides the above mentioned libraries, LoRa development board manufacturers also created their own libraries to be used on their hardware.
+
+Semtech maintains a reference implementation of a LoRa end node. 
+The code can be found at this location:
+https://github.com/Lora-net/LoRaMac-node​
+API documentation can be found at:
+http://stackforce.github.io/LoRaMac-doc/​
+This LoRa node library only supports the following platforms: NAMote72, NucleoLxx, SKiM880B, SKiM980A, SKiM881AXL and SAML21. 
+A porting guide is available which provides guide lines on how to port the project to other platforms, see: 
+http://stackforce.github.io/LoRaMac-d...​
+
+The IBM LMIC library was originally developed by the IBM Zurich Research Laboratory. 
+IBM has ceased development on this library since version 1.6 (13th July 2015),  however it is provided as open source under the BSD License.
+The code can be found at this location:
+https://www.zurich.ibm.com/pdf/lrsc/l...​ or
+https://github.com/lmic-lib/lmic​
+This library does not support Arduino platforms.
+
+The IBM LMIC library is ported to Arduino platforms and is called Arduino LMIC.
+This library supports SX1272, SX1276 transceivers and compatible modules such as HopeRF RFM92/RFM95 modules.
+The code can be found at this location:
+https://github.com/matthijskooijman/a...​ are maintained by Matthijs Kooijman, Thomas Telkamp, and others.
+The Arduino LMIC library provides a fairly complete LoRaWAN Class A and Class B implementation, supporting the EU-868 and US-915 bands.
+The compiled size of this library is about 30kBytes.
+
+The Arduino LMIC library is forked many times but the fork made by MCCI Catena seems to be actively maintained.
+https://github.com/mcci-catena/arduin...​
+Among others, the MCCI Arduino LMIC has added regional support for Australia (921 MHz), Asia (923 MHz) and India (866 MHz).
+
+The Arduino LMIC and the MCCI Arduino LMIC library are intended to be used with plain LoRa transceivers, connecting to them using SPI (Serial Peripheral Interface).
+This library contains a full LoRaWAN stack and is intended to drive these transceivers directly.
+The library has only been tested with LoRaWAN 1.0.2 networks.
+The library can not be used with full-stack devices like the Microchip RN2483. 
+These modules contains a transceiver and microcontroller that implements the LoRaWAN stack and exposes a high-level serial interface instead of a low-level SPI transceiver interface.
+
+To understand how the Arduino LMIC library works: 
+- IBM LoRaWAN in C Technical Specification
+  https://github.com/matthijskooijman/a...​
+- Semtech SX1272/73 Datasheet
+  https://www.semtech.com/uploads/docum...​
+- Semtech SX1276-7-8-9 Datasheet
+  https://www.semtech.com/uploads/docum...​
+
+Other Arduino LoRa end node libraries can be found at:
+https://www.arduinolibraries.info/lib...
