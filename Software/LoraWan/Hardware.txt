@@ -1,0 +1,32 @@
+ESP32 LoRa Series:
+Heltec WiFi LoRa 32 v2    SX1276/SX1278   sleep current ≤800uA)  
+https://heltec.org/project/wifi-lora-32/
+
+Heltec Wireless Stick      chip SX1276/SX1278       800uA 115-130
+https://heltec.org/project/wireless-stick/
+
+
+Heltec Wireless Stick Lite  node chip SX1276  Average: 80 mA 35uA   ESP32-PICO MCU 
+https://heltec.org/project/wireless-stick-lite/
+
+Heltec Wireless Shell node chip SX1276 10uA  ( without board )
+
+
+CubeCell Series ( no wifi/ no bluetooth )
+Heltec  HTCC-AB01  CubeCell – Dev-Board  SX1262; 3.5uA in deep sleep;   Onboard solar energy management system, can directly connect with a 5.5~7V solar panel;
+https://heltec.org/project/htcc-ab01/
+
+Heltec HTCC-AB02  SX1262. 3.5uA in deep sleep; LoRaWAN 1.0.2 support; Onboard solar energy management system, can directly connect with a 5.5~7V solar panel;
+https://heltec.org/project/htcc-ab02/ Onboard solar energy management system, can directly connect with a 5.5~7V solar panel;
+
+Heltec HTCC-AB02A SX1262. 
+https://heltec.org/project/htcc-ab02a/
+
+
+
+Gateway:
+Heltec  HT-M00    189mA
+Heltec 
+Heltec 
+Heltec 
+Heltec 
